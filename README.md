@@ -30,6 +30,7 @@ Rails 5.2.4.1
 
   - [Getting Started](#getting-started)
   - [Developer Guide](#developer-guide)
+  - [Work with Data](#work-with-data)
   - [References](#references)
 
 ## Getting Started
@@ -46,11 +47,12 @@ Then run:
 bundle install
 ```
 
-Then run:
+To run project:
 
 ```ruby
 rails s
 ```
+open browser and goto [localhost:3000](http://localhost:3000) 
 
 ## Developer Guide
     `user guide CLI`
@@ -71,6 +73,26 @@ rails s
     4. Destroy scaffold 
     ```ruby
     rails d scaffold Artist
+    ```
+    5. Generate Controller
+    ```ruby
+    rails g controller <controller name> <method>
+    rails g controller signup create
+    ```
+## Work with Data
+    1. insert
+    run: 
+    ```ruby
+    rails c 
+    ```
+    `c is for console`
+    
+    ```ruby
+    Artist.create!(name: "Bhumin in India")
+    ```
+    2. view
+    ```ruby
+    Artist.all
     ```
 
 ## References
