@@ -55,45 +55,57 @@ rails s
 open browser and goto [localhost:3000](http://localhost:3000) 
 
 ## Developer Guide
-    `user guide CLI`
-    1. generate model(interface) for 
-    ```ruby
-    rails g model User email password_digest 
-    ```
-    2. updte model changes
-     ```ruby
-     rails db:migrate
-    ``` 
-    3. generate scaffold (controller)
-    ```ruby
-    rails g scaffold <ClassName> <parameters>
-    rails g scaffold Artist name:string user:refrences
-    rails g scaffold Record title:string year:string artist:references user:references
-    ``` 
-    4. Destroy scaffold 
-    ```ruby
-    rails d scaffold Artist
-    ```
-    5. Generate Controller
-    ```ruby
-    rails g controller <controller name> <method>
-    rails g controller signup create
-    ```
+
+user guide CLI:
+
+1. generate model(interface) for 
+```
+rails g model User email password_digest 
+```
+
+2. updte model changes
+```
+rails db:migrate
+``` 
+
+3. generate scaffold (controller)
+```ruby
+rails g scaffold <ClassName> <parameters>
+rails g scaffold Artist name:string user:refrences
+rails g scaffold Record title:string year:string artist:references user:references
+``` 
+
+4. Destroy scaffold 
+```ruby
+rails d scaffold Artist
+```
+
+5. Generate Controller
+```ruby
+rails g controller <controller name> <method>
+rails g controller signup create
+```
 ## Work with Data
-    1. insert
-    run: 
-    ```ruby
-    rails c 
-    ```
-    `c is for console`
+
+1. insert
+
+run: 
+
+```ruby
+rails c 
+```
+
+`c is for console`
     
-    ```ruby
-    Artist.create!(name: "Bhumin in India")
-    ```
-    2. view
-    ```ruby
-    Artist.all
-    ```
+```ruby
+Artist.create!(name: "Bhumin in India")
+```
+
+
+2. view
+```ruby
+Artist.all
+```
 
 ## References
     [JWT Sessions](https://github.com/tuwukee/jwt_sessions)
