@@ -59,12 +59,12 @@ open browser and goto [localhost:3000](http://localhost:3000)
 user guide CLI:
 
 1. generate model(interface) for 
-```
+```ruby
 rails g model User email password_digest 
 ```
 
 2. updte model changes
-```
+```ruby
 rails db:migrate
 ``` 
 
@@ -108,5 +108,5 @@ Artist.all
 ```
 
 ## References
-    [JWT Sessions](https://github.com/tuwukee/jwt_sessions)
+[JWT Sessions](https://github.com/tuwukee/jwt_sessions)
 
