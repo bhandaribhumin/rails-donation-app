@@ -25,3 +25,19 @@ Rails 5.2.4.1
 * Deployment instructions
 
 * ...
+
+* Developer Guide
+```user guide CLI 
+    to generate model(interface) for 
+    > rails g model User email password_digest 
+    to updte model changes
+    > rails db:migrate 
+    to generate scaffold (controller)
+    > rails g scaffold <ClassName> <parameters>
+    > rails g scaffold Artist name:string user:refrences
+    > rails g scaffold Record title:string year:string artist:references user:references
+    to destroy scaffold 
+    > rails d scaffold Artist
+
+
+```
