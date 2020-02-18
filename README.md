@@ -47,12 +47,20 @@ Then run:
 bundle install
 ```
 
+Create data using after setup [Postgresql](#postgresql)
+```ruby
+rails db:seed
+```
+
 To run project:
+
 
 ```ruby
 rails s
 ```
+
 open browser and goto [localhost:3000](http://localhost:3000) 
+
 
 ## Developer Guide
 
@@ -86,9 +94,12 @@ rails g controller <controller name> <method>
 rails g controller signup create
 ```
 
-## Postgresql [if error: "rails db:create"]
+## Postgresql 
 
-**To create a new role, run the following command, replacing appname with whatever name you’d like to give the role**
+[if error: "rails db:create"]
+
+**To create a new role, run the following command**
+
 ```
 createuser -P -d rails_donation
 ```
@@ -107,7 +118,9 @@ postgres=# \q
 ```
 
 **ERROR: postgres could not connect to server /tmp/.s.pgsql.5432 mac**
+
 *Fix using*
+
 NOTE: `rm /usr/local/var/postgres/postmaster.pid`
 
 ## Configuring and Creating Your Database
@@ -117,6 +130,6 @@ echo 'export RAILS_DONATION_DATABASE_PASSWORD="1234"' >> ~/.bash_profile
 source ~/.bash_profile
 ```
 
-#References
+## References
 
 [postgresql setup mac](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-macos#step-4-—-configuring-and-creating-your-database)

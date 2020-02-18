@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+9.times do |i|
+    Artist.create(
+      name: "Donations #{i + 1}",
+      image: "https://f0.pngfuel.com/png/893/771/blue-donate-text-overlay-png-clip-art.png"
+    )
+  end
